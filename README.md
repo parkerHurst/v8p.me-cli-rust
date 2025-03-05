@@ -14,7 +14,7 @@ dependencies:
 
 ```bash
 git clone https://github.com/vaporii/v8p.me-cli
-cd v8p.me-cli/v8p-rs
+cd v8p.me-cli-rust/v8p-rs
 
 cargo build --release
 ```
