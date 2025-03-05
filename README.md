@@ -1,6 +1,6 @@
 # v8p.me-cli
 
-a cli tool for encrypting and uploading files for v8p.me
+a cli tool for encrypting and uploading files for v8p.me...BUT IN RUST!!!
 
 ![demo](https://github.com/user-attachments/assets/dda4d2a2-5ac3-4586-ae47-757c1daee107)
 
@@ -9,20 +9,19 @@ a cli tool for encrypting and uploading files for v8p.me
 dependencies:
 
 - git
-- go >= 1.24.0
-- xsel, xclip, or wl-clipboard (Linux only)
+- Rust and Cargo
+- xsel, xclip, or wl-clipboard (Linux only, for clipboard support)
 
 ```bash
 git clone https://github.com/vaporii/v8p.me-cli
-cd v8p.me-cli
+cd v8p.me-cli/v8p-rs
 
-go mod tidy
-go build -o build/v8p
+cargo build --release
 ```
 
-then, you can move the `v8p` executable anywhere you'd like and/or add the following to your .zshrc or .bashrc (replacing `/path/to/executable/build` with the directory containing your executable):
+The compiled binary will be available at `target/release/v8p-rs`. You can move this executable anywhere you'd like and/or add the following to your .zshrc or .bashrc (replacing `/path/to/executable` with the directory containing your executable):
 
-`export PATH="/path/to/executable/build:$PATH"`
+`export PATH="/path/to/executable:$PATH"`
 
 ### usage
 

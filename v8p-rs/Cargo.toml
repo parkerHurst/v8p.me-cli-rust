@@ -1,0 +1,24 @@
+[package]
+name = "v8p-rs"
+version = "0.1.0"
+edition = "2021"
+description = "A CLI tool for encrypting and uploading files to v8p.me"
+authors = ["v8p.me"]
+
+[dependencies]
+clap = { version = "4.4", features = ["derive"] }
+reqwest = { version = "0.11", features = ["blocking"] }
+regex = "1.10"
+ring = "0.17"
+aes-gcm = "0.10"
+pbkdf2 = "0.12"
+rand = "0.8"
+url = "2.4"
+mime_guess = "2.0"
+copypasta = "0.10"
+indicatif = "0.17"
+anyhow = "1.0"
+thiserror = "1.0"
+time = "0.3"
+sha2 = "0.10"
+urlencoding = "2.1"
